@@ -283,7 +283,7 @@ def descargar_bonos_salud(institucion, timeout_sesion):
         #fecha_str = datetime.now().strftime("%d/%m/%Y") # fecha hoy 
         #fecha_ayer = datetime.now() - timedelta(days=1) # fecha ayer
         #fecha_str = fecha_ayer.strftime("%d/%m/%Y")
-        fecha_str = '10/07/2025'
+        fecha_str = '10/07/2025' # fecha en bruto con bonos en portal isapre
         driver.find_element(By.ID, "ctl00_ctl00_ContentPlaceHolderHome_ContentPlaceHolderBonosPAM_TextBoxFechaInicio").clear()
         driver.find_element(By.ID, "ctl00_ctl00_ContentPlaceHolderHome_ContentPlaceHolderBonosPAM_TextBoxFechaInicio").send_keys(fecha_str)
         driver.find_element(By.ID, "ctl00_ctl00_ContentPlaceHolderHome_ContentPlaceHolderBonosPAM_TextBoxFechaTermino").clear()
