@@ -1,0 +1,25 @@
+2025-07-11 08:40:45 - ERROR - Ocurrió un error: 
+\u274c Ocurrió un error Isapre: : Message: No se encuentran Bonos por emitir.
+
+Traceback (most recent call last):
+  File "C:\Users\programadorll\Documents\sistemas_python\RPA\RPA_VINCULACION_BONOS\web-scrapping-isapres.py", line 280, in descargar_bonos_salud
+    raise TimeoutException("No se encuentran Bonos por emitir.")
+selenium.common.exceptions.TimeoutException: Message: No se encuentran Bonos por emitir.
+
+
+2025-07-11 08:40:51 - ERROR - Ocurrió un error: 
+\u274c Error en intento 1: 'data_paciente'
+Traceback (most recent call last):
+  File "C:\Users\programadorll\Documents\sistemas_python\RPA\RPA_VINCULACION_BONOS\web-scrapping-isapres.py", line 447, in ejecutar_con_reintentos_bonos
+    df_data_paciente = respuesta["data_paciente"]
+                       ~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'data_paciente'
+
+2025-07-11 09:21:28 - ERROR - Ocurrió un error: 
+\u274c Ocurrió un error Isapre: : cannot access local variable 'mensaje_log' where it is not associated with a value
+Traceback (most recent call last):
+  File "C:\Users\programadorll\Documents\sistemas_python\RPA\RPA_VINCULACION_BONOS\web-scrapping-isapres.py", line 289, in descargar_bonos_salud
+    registro_log(mensaje_log,institucion)
+                ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'mensaje_log' where it is not associated with a value
+

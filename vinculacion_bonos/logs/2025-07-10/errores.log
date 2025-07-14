@@ -1,0 +1,32 @@
+2025-07-10 17:01:34 - ERROR - Ocurrió un error: 
+\u274c Error en intento 1: cannot access local variable 'e' where it is not associated with a value
+2025-07-10 18:52:43 - ERROR - Ocurrió un error: 
+\u274c Ocurrió un error Isapre: : registro_log() missing 1 required positional argument: 'param_isapre'
+Traceback (most recent call last):
+  File "C:\Users\programadorll\Documents\sistemas_python\RPA\RPA_VINCULACION_BONOS\web-scrapping-isapres.py", line 393, in descargar_bonos_salud
+    registro_log(f"Detalles pacientes:\n{df_total_pacientes}")
+TypeError: registro_log() missing 1 required positional argument: 'param_isapre'
+
+2025-07-10 18:52:50 - ERROR - Ocurrió un error: 
+\u274c Error en intento 1: 'data_paciente'
+Traceback (most recent call last):
+  File "C:\Users\programadorll\Documents\sistemas_python\RPA\RPA_VINCULACION_BONOS\web-scrapping-isapres.py", line 445, in ejecutar_con_reintentos_bonos
+    df_data_paciente = respuesta["data_paciente"]
+                       ~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'data_paciente'
+
+2025-07-10 18:59:19 - ERROR - Ocurrió un error: 
+\u274c Ocurrió un error Isapre: : registro_log() missing 1 required positional argument: 'param_isapre'
+Traceback (most recent call last):
+  File "C:\Users\programadorll\Documents\sistemas_python\RPA\RPA_VINCULACION_BONOS\web-scrapping-isapres.py", line 393, in descargar_bonos_salud
+    registro_log(f"Detalles pacientes:\n{df_total_pacientes}")
+TypeError: registro_log() missing 1 required positional argument: 'param_isapre'
+
+2025-07-10 18:59:25 - ERROR - Ocurrió un error: 
+\u274c Error en intento 1: 'data_paciente'
+Traceback (most recent call last):
+  File "C:\Users\programadorll\Documents\sistemas_python\RPA\RPA_VINCULACION_BONOS\web-scrapping-isapres.py", line 445, in ejecutar_con_reintentos_bonos
+    df_data_paciente = respuesta["data_paciente"]
+                       ~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'data_paciente'
+
