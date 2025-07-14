@@ -197,7 +197,7 @@ def obtener_credencialesDeAcceso(usuario):
         return None
 #----------------------------------------------------# CREDENCIALES #----------------------------------------------------#
 
-#----------------------------------------------------# BANMEDICA Y VIDA3 #----------------------------------------------------# #AKI
+#----------------------------------------------------# BANMEDICA Y VIDA3 #----------------------------------------------------# #UNIFICACION
 def descargar_bonos_salud(institucion, timeout_sesion):
     driver = None
     tiempo_espera = timeout_sesion
@@ -243,39 +243,39 @@ def descargar_bonos_salud(institucion, timeout_sesion):
         time.sleep(3)
 
 
-        # ---------- Ingreso de credenciales ---------- #AKI
+        # ---------- Ingreso de credenciales ---------- #UNIFICACION
 
-        #Ingreso de rut #AKI
+        #Ingreso de rut #UNIFICACION
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "rut"))).send_keys(usuario)
         time.sleep(1.5)
 
-        #Ingreso de contrasena #AKI
+        #Ingreso de contrasena #UNIFICACION
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "current-password"))).send_keys(contrasena)
         time.sleep(1.5)
 
-        #Click boton ingresar #AKI
+        #Click boton ingresar #UNIFICACION
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'ingresar')]"))).click()
         time.sleep(6)
-        # ---------- Ingreso de credenciales ---------- #AKI
+        # ---------- Ingreso de credenciales ---------- #UNIFICACION
 
-        #Identificar select y seleccionar institucion 93915000-5 #AKI
+        #Identificar select y seleccionar institucion 93915000-5 #UNIFICACION
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "cboSeleccionHolding"))).click()
         Select(driver.find_element(By.ID, "cboSeleccionHolding")).select_by_value("93915000|93915000")
         time.sleep(4)
 
-        #Seleccion de boton "Programas medicos" #AKI
+        #Seleccion de boton "Programas medicos" #UNIFICACION
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "btnSeleccionar"))).click()
         time.sleep(4)
 
-        #Seleccion de boton "Emision de bonos PAM" #AKI
+        #Seleccion de boton "Emision de bonos PAM" #UNIFICACION
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "menu2"))).click()
         time.sleep(4)
 
-        #Seleccion de boton "Por fecha" #AKI
+        #Seleccion de boton "Por fecha" #UNIFICACION
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "ctl00_ctl00_ContentPlaceHolderHome_modMenu_wucMenuLateral_treMenut0"))).click()
         time.sleep(4)
 
-        #Seleccion de boton "Por fecha" #AKI
+        #Seleccion de boton "Por fecha" #UNIFICACION
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "ctl00_ctl00_ContentPlaceHolderHome_ContentPlaceHolderBonosPAM_RadioButtonList1_0"))).click()
         time.sleep(4)
 
@@ -311,10 +311,10 @@ def descargar_bonos_salud(institucion, timeout_sesion):
             cols = fila.find_elements(By.TAG_NAME, "td")
             pacientes.append({
                 "folio_pam": cols[0].text.strip(),
-                #"num_cuenta": cols[1].text.strip(), #AKI
+                #"num_cuenta": cols[1].text.strip(), #UNIFICACION
                 "rut_afiliado": cols[2].text.strip(),
-                #"rut_paciente": cols[3].text.strip(), #AKI
-                #"nombre_paciente": cols[4].text.strip(), #AKI
+                #"rut_paciente": cols[3].text.strip(), #UNIFICACION
+                #"nombre_paciente": cols[4].text.strip(), #UNIFICACION
                 "monto_facturado": cols[5].text.strip(),
                 "monto_bonificado": cols[6].text.strip()
             })
@@ -345,8 +345,8 @@ def descargar_bonos_salud(institucion, timeout_sesion):
                         "folio_colilla": cols[0].text.strip(),
                         "folio_interno": cols[1].text.strip(),
                         "fecha_recepcion": cols[2].text.strip(),
-                        #"rut_beneficiario": cols[3].text.strip(), #AKI
-                        #"nombre_beneficiario": cols[4].text.strip(), #AKI
+                        #"rut_beneficiario": cols[3].text.strip(), #UNIFICACION
+                        #"nombre_beneficiario": cols[4].text.strip(), #UNIFICACION
                         "monto_prestacion": cols[5].text.strip(),
                         "monto_ayuda": cols[6].text.strip()
                     })
@@ -430,7 +430,7 @@ def descargar_bonos_salud(institucion, timeout_sesion):
         if driver is not None:
             driver.quit()
        
-#----------------------------------------------------# BANMEDICA Y VIDA3 #----------------------------------------------------# #AKI
+#----------------------------------------------------# BANMEDICA Y VIDA3 #----------------------------------------------------# #UNIFICACION
 
 
 
