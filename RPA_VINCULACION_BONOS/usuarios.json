@@ -1,0 +1,26 @@
+{
+    "usuarioBanmedica": [
+    {
+        "usuario": "183289985",
+        "pass": "iopa2023",
+        "url": "https://login-prestadores.isaprebanmedica.cl/login"
+       
+    }
+    ],
+    "usuarioVida3": [
+    {
+        "usuario": "183289985",
+        "pass": "iopa2023",
+        "url": "https://login-prestadores.isaprevidatres.cl/login"
+       
+    }
+    ],
+    "usuarioColmena": [
+    {
+        "usuario": "93915000-5", 
+        "pass": "IOPALL",
+        "url": "https://www.colmena.cl/web-prestadores/"
+       
+    }
+    ]
+}

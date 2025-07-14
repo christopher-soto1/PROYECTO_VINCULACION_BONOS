@@ -1,0 +1,8 @@
+2025-07-14 10:23:52 - ERROR - Ocurrió un error: 
+\u274c Error en intento 1: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\programadorll\Desktop\PROYECTO_VINVULACION_BONOS\RPA_VINCULACION_BONOS\web-scrapping-isapres.py", line 471, in ejecutar_con_reintentos_bonos
+    estado = respuesta["estado"]
+             ~~~~~~~~~^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
