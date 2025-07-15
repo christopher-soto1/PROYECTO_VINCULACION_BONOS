@@ -220,7 +220,8 @@ function log_final($isapre) {
 //-------------------------------------------------------------------------------------------------------------------------
 function ejecutar_tarea_banmedica_vidaTres($isapre){
     // Ruta al script Python
-    $pythonScriptPath = 'C:/Users/programadorll/Documents/sistemas_python/RPA/RPA_VINCULACION_BONOS/web-scrapping-isapres.py';
+    #$pythonScriptPath = 'C:/Users/programadorll/Documents/sistemas_python/RPA/RPA_VINCULACION_BONOS/web-scrapping-isapres.py'; #ruta pc marcos
+    $pythonScriptPath = 'C:/Users/programadorll/Desktop/PROYECTO_VINCULACION_BONOS/RPA_VINCULACION_BONOS/web-scrapping-isapres.py'; #ruta pc chris
     // Ejecutar el script Python sin parametros
     // $output = shell_exec("python \"$pythonScriptPath\" 2>&1");
      // Ejecutar el script Python con los parámetros
